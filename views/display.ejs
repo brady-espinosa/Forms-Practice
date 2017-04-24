@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <% for(var i = 0; i < data.length; i++){%>
+      <h2><%= data[i].team%></h2>
+      <table>
+        <thead>
+          <th>player</th>
+          <th>Position</th>
+        </thead>
+
+      <% for(var key in data[i] ){%>
+        <tr>
+          <td><%= data[i][key] %></td>
+          <td><%= key%></td>
+        </tr>
+
+
+  <% } %>
+      </table>
+  <% } %>
+  </body>
+</html>
