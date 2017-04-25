@@ -1,64 +1,63 @@
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Your Team</title>
-  </head>
-  <body>
-    <h1><%= team %></h1>
-    <h2>Wins: 0 Losses: 0</h2>
-    <h2>Roster</h2>
-    <table>
-      <tr>
-        <th>Player</th>
-        <th>Position</th>
-        <th>Batting Average</th>
-      </tr>
-      <tr>
-        <td><%= first %></td>
-        <td>First Base</td>
-        <td>.000</td>
-      </tr>
-      <tr>
-        <td><%= second %></td>
-        <td>Second Base</td>
-        <td>.000</td>
-      </tr>
-      <tr>
-        <td><%= third %></td>
-        <td>Third Base</td>
-        <td>.000</td>
-      </tr>
-      <tr>
-        <td><%= short %></td>
-        <td>Short Stop</td>
-        <td>.000</td>
-      </tr>
-      <tr>
-        <td><%= right %></td>
-        <td>Right Field</td>
-        <td>.000</td>
-      </tr>
-      <tr>
-        <td><%= center %></td>
-        <td>Center Field</td>
-        <td>.000</td>
-      </tr>
-      <tr>
-        <td><%= left %></td>
-        <td>Left Field</td>
-        <td>.000</td>
-      </tr>
-      <tr>
-        <td><%= catcher %></td>
-        <td>Catcher</td>
-        <td>.000</td>
-      </tr>
-      <tr>
-        <td><%= pitch %></td>
-        <td>Pitcher</td>
-        <td>.000</td>
-      </tr>
+  <h1><%= responses.team %></h1>
+  <h2>Wins: 0 Losses: 0</h2>
+  <h2>Roster</h2>
+  <table>
+    <tr>
+      <th>Player</th>
+      <th>Position</th>
+      <th>Batting Average</th>
+    </tr>
+    <tr>
+      <td><%= responses.first %></td>
+      <td>First Base</td>
+      <td>.000</td>
+    </tr>
+    <tr>
+      <td><%= responses.second %></td>
+      <td>Second Base</td>
+      <td>.000</td>
+    </tr>
+    <tr>
+      <td><%= responses.third %></td>
+      <td>Third Base</td>
+      <td>.000</td>
+    </tr>
+    <tr>
+      <td><%= responses.short %></td>
+      <td>Short Stop</td>
+      <td>.000</td>
+    </tr>
+    <tr>
+      <td><%= responses.right %></td>
+      <td>Right Field</td>
+      <td>.000</td>
+    </tr>
+    <tr>
+      <td><%= responses.center %></td>
+      <td>Center Field</td>
+      <td>.000</td>
+    </tr>
+    <tr>
+      <td><%= responses.left %></td>
+      <td>Left Field</td>
+      <td>.000</td>
+    </tr>
+    <tr>
+      <td><%= responses.catcher %></td>
+      <td>Catcher</td>
+      <td>.000</td>
+    </tr>
+    <tr>
+      <td><%= responses.pitch %></td>
+      <td>Pitcher</td>
+      <td>.000</td>
+    </tr>
 
-    </table>
-  </body>
-</html>
+  </table>
+  <a href='/display'>
+  <button type="button"  name="button" >View League</button>
+  <br>
+  </a>
+  <a href='/'>
+  <button type="button"  name="button" >Home</button>
+  </a>

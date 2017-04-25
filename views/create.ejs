@@ -1,75 +1,92 @@
-
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>team tracker</title>
-  </head>
-  <body>
-    <h1>Team Tracker</h1>
-    <h2>Create New Team</h2>
-    <form id='team-form' action='/your-team' method='post'>
+  <h1>Team Tracker</h1>
+  <h2>Create New Team</h2>
+  <form id='team-form' action='/your-team' method='post'>
     <input type='text' value='your new team' name='team' />
     <h2>Roster</h2>
+    <table>
+      <tr>
+        <label>
+          First Base
+          <input type="text" name="first" value="">
+        </label>
+      </tr>
+      <tr>
+        <td>
+        <label>
+          Second Base
+          <input type="text" name="second" value="">
+        </label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        <label>
+          Third Base
+          <input type="text" name="third" value="">
+        </label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        <label>
+          Short Stop
+          <input type="text" name="short" value="">
+        </label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        <label>
+          Right Field
+          <input type="text" name="right" value="">
+        </label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        <label>
+          Center Field
+          <input type="text" name="center" value="">
+        </label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        <label>
+          Left Field
+          <input type="text" name="left" value="">
+        </label>
+      </tr>
+      <tr>
+        <td>
+        <label>
+          Catcher
+          <input type="text" name="catcher" value="">
+        </label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        <label>
+          Pitcher
+          <input type="text" name="pitch" value="">
+        </label>
+        </td>
+      </tr>
+    </table>
+    <h2>Team Color</h2>
     <label>
-      First Base
-    <input type="text" name="first" value="bob">
-  </label>
-  <br>
-    <label>
-      Second Base
-    <input type="text" name="second" value="bob bobington">
+      <input type='radio' name='teamColor' value='red' selected />
+      Red
     </label>
-  <br>
     <label>
-      Third Base
-    <input type="text" name="third" value="bob bobington">
+      <input type='radio' name='teamColor' value='green' />
+      Green
     </label>
-  <br>
     <label>
-      Short Stop
-    <input type="text" name="short" value="bob bobington">
+      <input type='radio' name='teamColor' value='blue' />
+      Blue
     </label>
-  <br>
-    <label>
-      Right Field
-    <input type="text" name="right" value="bob bobington">
-    </label>
-  <br>
-    <label>
-      Center Field
-    <input type="text" name="center" value="bob bobington">
-    </label>
-  <br>
-    <label>
-      Left Field
-    <input type="text" name="left" value="bob bobington">
-    </label>
-  <br>
-    <label>
-      Catcher
-    <input type="text" name="catcher" value="bob bobington">
-    </label>
-  <br>
-    <label>
-      Pitcher
-    <input type="text" name="pitch" value="bob bobington">
-    </label>
-
-  <h2>Team Color</h2>
-  <label>
-    <input type='radio' name='teamColor' value='red' selected />
-    Red
-  </label>
-  <label>
-    <input type='radio' name='teamColor' value='green' />
-    Green
-  </label>
-  <label>
-    <input type='radio' name='teamColor' value='blue' />
-    Blue
-  </label>
     <br>
     <input type="submit"  value="create team" >
   </form>
-  </body>
-</html>

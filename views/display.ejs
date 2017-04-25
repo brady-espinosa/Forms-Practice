@@ -1,26 +1,24 @@
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <% for(var i = 0; i < data.length; i++){%>
-      <h2><%= data[i].team%></h2>
-      <table>
-        <thead>
-          <th>player</th>
-          <th>Position</th>
-        </thead>
 
-      <% for(var key in data[i] ){%>
+  <% for(var i = 0; i < data.length; i++){%>
+    <% let team = data[i]%>
+    <h2><%=team.team%></h2>
+    <table>
+      <thead>
+        <th>Player</th>
+        <th>Position</th>
+      </thead>
+
+
+      <% let playerPositions = Object.getOwnPropertyNames(team) %>
+      <% for(var j=1; j < playerPositions.length; j++ ) {%>
         <tr>
-          <td><%= data[i][key] %></td>
-          <td><%= key%></td>
+          <td><%= team[playerPositions[j]] %></td>
+          <td><%= playerPositions[j]%></td>
         </tr>
 
-
-  <% } %>
+        <% } %>
       </table>
-  <% } %>
-  </body>
-</html>
+      <% } %>
+      <a href='/'>
+        <button type="button"  name="button" >Home</button>
+      </a>

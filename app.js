@@ -2,8 +2,11 @@ var express = require('express')
 var app = express()
 var bodyParser = require('body-parser')
 var fs = require('fs')
+var expressLayouts = require('express-ejs-layouts')
+app.use(express.static('public'))
 app.set('view engine', 'ejs')
 app.use(bodyParser.urlencoded({ extended: false}))
+app.use(expressLayouts)
 
 app.get('/', function (request, response){
   response.render('index')
@@ -26,7 +29,8 @@ app.post('/your-team', function (request, response){
   var teamUpdates = JSON.parse(rawFile)
   teamUpdates.push(responses)
   fs.writeFileSync('data.json', JSON.stringify(teamUpdates))
-  response.render('your-team', responses)
+  console.log(responses)
+  response.render('your-team', {responses:responses})
 })
 
 

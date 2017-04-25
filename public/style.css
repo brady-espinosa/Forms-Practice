@@ -1,0 +1,20 @@
+body {
+  background-image: url(http://mikecameronbaseballacademy.com/wp-content/uploads/2016/12/Baseball.jpg);
+  background-size: cover;
+  color: white;
+  text-shadow: 2px 2px black
+}
+input {
+  color: black;
+}
+.container {
+  margin: 20px;
+}
+/*.poopButton{
+  border-radius: 20px;*/
+/*}*/
+.jumbotron {
+  text-align: center;
+  font-family: Permanent Marker;
+  background-color: rgba(210,210,210, .5)
+}
